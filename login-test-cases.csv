@@ -1,0 +1,28 @@
+Key,Name,Status,Precondition,Objective,Folder,Priority,Component,Labels,Owner,Estimated Time,Coverage (Issues),Coverage (Pages),Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Test Data,Test Script (Step-by-Step) - Expected Result,Test Script (Plain Text),Test Script (BDD)
+TJ-T5,TC_LOGIN_001,Draft,"User is on the fintech login page
+User has a registired fintech account",Verify login with valid credentials,/Login,High,,,Ergucel,,,,Enter a valid email,test@mail.com,The entered email is accepted without validation errors.,,
+,,,,,,,,,,,,,Click to the next button,,"The system proceeds to the next step without displaying any validation 
+errors. ",,
+,,,,,,,,,,,,,Enter a valid password,test@123,The entered password is accepted without validation errors.,,
+,,,,,,,,,,,,,Click the login button,,"The system redirects the user to the email verification page to complete 
+the authentication process.",,
+,,,,,,,,,,,,,Select email verification and click the next button,,"The system accepts the selected email verification option and displays the 
+email verification code entry page",,
+,,,,,,,,,,,,,Enter a valid verification code and click the Submit button,,"The system accepts the email verification code and redirects to the user 
+account dashboard",,
+TJ-T6,TC_LOGIN_002,Draft,"User is on the fintech login page
+User has a registired fintech account",Verify login attempt with invalid email,/Login,High,,,Ergucel,,,,Enter an invalid email address,invalid_test@mail.com,The system rejects the entered email address and displays an error message.,,
+TJ-T7,TC_LOGIN_003,Draft,"User is on the fintech login page
+User has a registired fintech account",Verify login attempt with empty email field,/Login,High,,,Ergucel,,,,Leave email address field empty,,The system rejects the empty email address and displays an error message.,,
+TJ-T8,TC_LOGIN_004,Draft,"User is on the fintech login page
+User has a registired fintech account",Verify login with invalid password,/Login,High,,,Ergucel,,,,Enter a valid email,test@mail.com,The entered email or phone number is accepted without validation errors.,,
+,,,,,,,,,,,,,Click to the next button,,"The system proceeds to the next step without displaying any validation 
+errors",,
+,,,,,,,,,,,,,Enter an invalid password,invalidtest@123,"The system accepts the password input without performing validation at this 
+step",,
+,,,,,,,,,,,,,Click the login button,,The system rejects the entered password and displays an error message,,
+TJ-T9,TC_LOGIN_005,Draft,"User is on the fintech login page
+User has a registired fintech account",Verify login attempt with unregistered email address,/Login,High,,,Ergucel,,,,Enter an unregistered email address,unregisteredtest@mail.com,"The system accepts entered email address without performing account 
+existence validation at this step",,
+,,,,,,,,,,,,,Click to the next button,,"The system displays an error message about email address indicating that 
+the email address is not registered",,
