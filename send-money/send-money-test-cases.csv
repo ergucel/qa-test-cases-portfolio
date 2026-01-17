@@ -1,1 +1,58 @@
-test
+Key,Name,Status,Precondition,Objective,Folder,Priority,Component,Labels,Owner,Estimated Time,Coverage (Issues),Coverage (Pages),Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Test Data,Test Script (Step-by-Step) - Expected Result,Test Script (Plain Text),Test Script (BDD)
+TJ-T10,TC_SEND_001,Draft,"User has a valid and active fintech account
+User logged in
+Sender account has sufficient balance
+Receiver email exists",Verify sending money with sufficient balance,/Send,High,,,Ergucel,,,,Click the send money button,,The system displays the send money page,,
+,,,,,,,,,,,,,Enter a valid receiver email address,testReceiver@mail.com,The system accepts the entered email address without validation errors,,
+,,,,,,,,,,,,,Click the next button,,The system proceeds to the amount selection page,,
+,,,,,,,,,,,,,Enter a sufficient amount,"account balance: $5
+Transfer amount: $1","The system accepts the entered amount without displaying any validation 
+errors",,
+,,,,,,,,,,,,,Click the next button,,"The system displays the transaction coniformation page with correct 
+transaction details",,
+,,,,,,,,,,,,,Click the confirm button,,The system displays the transaction receipt page,,
+TJ-T11,TC_SEND_002,Draft,"User has a valid and active fintech account
+User logged in
+Receiver email exists",Verify sending money with insufficient balance,/Send,High,,,Ergucel,,,,Click the send money button,,The system displays the send money page,,
+,,,,,,,,,,,,,Enter a receiver email address,testReceiver@mail.com,The system accepts the entered email address without validation errors,,
+,,,,,,,,,,,,,Click the next button,,The system proceeds to the amount selection page,,
+,,,,,,,,,,,,,Enter an insufficient amount,"account balance: $5
+Transfer amount: $10",The amount enter field accepts the entered value,,
+,,,,,,,,,,,,,Click the next button,,"The system displays an error message indicating that the balance is 
+insufficient",,
+TJ-T12,TC_SEND_003,Draft,"User has a valid and active fintech account
+User logged in
+Receiver email exists",Verify error message displayed when transfer amount is zero,/Send,High,,,Ergucel,,,,Click the send money button,,The system displays the send money page,,
+,,,,,,,,,,,,,Enter a receiver email address,testReceiver@mail.com,The system accepts the entered email address without validation errors,,
+,,,,,,,,,,,,,Click the next button,,The system proceeds to the amount selection page,,
+,,,,,,,,,,,,,Leave amount field as 0,"account balance: $5
+Transfer amount: $0","The system allows entering the amount but does not display any error at 
+this stage",,
+,,,,,,,,,,,,,Click the next button,,"The system disables the next button and displays and error message 
+indicating that the amount must be greater than zero",,
+TJ-T14,TC_SEND_004,Draft,"User has a valid and active fintech account
+User logged in
+Sender account has sufficient balance
+Receiver email exists",Verify cancel payment before confirmation,/Send,High,,,Ergucel,,,,Click the send money button,,The system displays the send money page,,
+,,,,,,,,,,,,,Enter a valid receiver email address,testReceiver@mail.com,The system accepts the entered email address without validation errors,,
+,,,,,,,,,,,,,Click the next button,,The system proceeds to the amount selection page,,
+,,,,,,,,,,,,,Enter a sufficient amount,"account balance: $5
+Transfer amount: $1","The system accepts the entered amount without displaying any validation 
+errors",,
+,,,,,,,,,,,,,Click the next button,,"The system displays the transaction coniformation page with correct 
+transaction details",,
+,,,,,,,,,,,,,Click the cancel transaction button,,The system cancel the transaction and navigates back to send money page,,
+TJ-T15,TC_SEND_005,Draft,"User has a valid and active fintech account
+User logged in
+Sender account has sufficient balance
+Receiver email exists","Verify duplicate click on send button does not create duplicate 
+transactions",/Send,High,,,Ergucel,,,,Click the send money button,,The system displays the send money page,,
+,,,,,,,,,,,,,Enter a valid receiver email address,testReceiver@mail.com,The system accepts the entered email address without validation errors,,
+,,,,,,,,,,,,,Click the next button,,The system proceeds to the amount selection page,,
+,,,,,,,,,,,,,Enter a sufficient amount,"account balance: $5
+Transfer amount: $1","The system accepts the entered amount without displaying any validation 
+errors",,
+,,,,,,,,,,,,,Click the next button,,"The system displays the transaction coniformation page with correct 
+transaction details",,
+,,,,,,,,,,,,,Click the confirm button twice,,"The system process only one transaction, displays a single transaction 
+receipt page, and prevents duplicate transaction creation",,
