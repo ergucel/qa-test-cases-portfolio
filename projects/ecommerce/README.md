@@ -1,3 +1,12 @@
+## About This Project
+
+This project contains manual test cases and bug reports created
+by executing test scenarios on a sample e-commerce application
+(Swag Labs).
+
+Test cases were designed, executed, and documented using
+Jira & Zephyr Scale, then exported as CSV files for portfolio purposes.
+
 ## Test Scope
 - Login
 - Inventory
