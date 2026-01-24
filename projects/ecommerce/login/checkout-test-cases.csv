@@ -1,0 +1,23 @@
+Key,Name,Status,Precondition,Objective,Folder,Priority,Component,Labels,Owner,Estimated Time,Coverage (Issues),Coverage (Pages),Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Test Data,Test Script (Step-by-Step) - Expected Result,Test Script (Plain Text),Test Script (BDD)
+TJ-T31,TC_CHECKOUT_001,Approved,"-User has a valid and active account
+-User logged in
+-User added a product to cart
+-Cart page is opened",Verify that the user can complete checkout with valid cart items,/Checkout,High,,,ergucel,,,,Verify that at least one product is displayed on the cart page,,The selected product is visible in the cart with correct details,,
+,,,,,,,,,,,,,Click the checkout button,,User is navigated to the checkout information page,,
+,,,,,,,,,,,,,Verify that the checkout information page is displayed,,Checkout page is displayed successfully and ready for user input,,
+TJ-T32,TC_CHECKOUT_002,Approved,"-User has a valid and active account
+-User logged in
+-User added a product to cart
+-Checkout information page is opened",Verify that user can continue with valid checkout information,/Checkout,High,,,ergucel,,,,Enter a valid first name,,"First name field accepts the entered value without displaying any 
+validation error",,
+,,,,,,,,,,,,,Enter a valid lastname,,"Last name field accepts the entered value without displaying any validation 
+error",,
+,,,,,,,,,,,,,Enter a valid zipcode,,"Zipcode field accepts the entered value without displaying any validation 
+error",,
+,,,,,,,,,,,,,Click the contunie button,,User is navigated to the checkout overview page successfully,,
+TJ-T33,TC_CHECKOUT_003,Approved,"-User has a valid and active account
+-User logged in
+-User added a product to cart
+-Checkout overview page is opened","Verify that the user can complete checkout successfully from the checkout 
+overview page",/Checkout,High,,,ergucel,,,,Verify that all displayed checkout information matches the entered inputs,,All checkout details match the previously entered information,,
+,,,,,,,,,,,,,Click to the finish button,,Order confirmation page is displayed successfully,,

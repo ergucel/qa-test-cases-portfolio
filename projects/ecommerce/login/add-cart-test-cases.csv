@@ -1,0 +1,17 @@
+Key,Name,Status,Precondition,Objective,Folder,Priority,Component,Labels,Owner,Estimated Time,Coverage (Issues),Coverage (Pages),Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Test Data,Test Script (Step-by-Step) - Expected Result,Test Script (Plain Text),Test Script (BDD)
+TJ-T29,TC_ADDCART_001,Approved,"-User has a valid and active account
+-User logged in
+-Dashboard opened",To verify that the user can add a product to the cart successfully,/Add Cart,Normal,,,ergucel,,,,Navigate to the all items page,,Product page is displayed successfully,,
+,,,,,,,,,,,,,Click to the add cart button for a product,,The selected product added to the cart successfully,,
+,,,,,,,,,,,,,Observe the cart icon,,The cart icon updates to reflect the added product quantity,,
+TJ-T30,TC_ADDCART_002,Approved,"-User has a valid and active account
+-User logged in
+-Dashboard opened","To verify that the product name and description remain correct after adding 
+the product to the cart",/Add Cart,Normal,,,ergucel,,,,Navigate to the all items page,,Product page is displayed successfully,,
+,,,,,,,,,,,,,"Note the product name and description for a selected product on the 
+products page for later comparison",,"The product name and description are displayed correctly and match the 
+selected product",,
+,,,,,,,,,,,,,Click to add to cart button for the selected product,,"The product is added to the cart and the cart icon updates the item 
+quantity",,
+,,,,,,,,,,,,,Click to the cart icon open the cart page,,"The cart page displayed successfully and shows the correct product name and 
+description matching the selected product",,
