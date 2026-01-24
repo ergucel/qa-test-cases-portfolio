@@ -1,0 +1,24 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Due date,Votes,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Custom field (Approvals),Custom field (Epic Color),Custom field (Epic Name),Custom field (Issue color),Custom field (Rank),Custom field (Time to done),Custom field (Time to first response),Custom field (Time to resolution),Custom field ([CHART] Date of First Response),Custom field ([CHART] Time in Status),Status Category,Status Category Changed
+One product name is displayed incorrectly on the products page,TJ-4,10139,Bug,To Do,TJ,Test Jira,software,Gokhan Ergucel,Ergucel,,Medium,,,,Gokhan Ergucel,Ergucel,Gokhan Ergucel,Ergucel,24/Jan/26 3:54 PM,24/Jan/26 3:54 PM,24/Jan/26 4:42 PM,,,0,"Environment:
+
+* Browser: Chrome
+* OS: macOS
+* Environment: Test
+
+Preconditions:
+
+* User has a valid and active account
+* User is logged in
+* Products page is accessible
+
+Steps to Reproduce:
+
+# Log in with a valid user account
+# Navigate to the Products page
+# Observe the product names listed on the page
+
+Expected Result:
+All product names should be displayed correctly.
+
+Actual Result:
+One product name is displayed incorrectly while others are correct.",,Gokhan Ergucel,Ergucel,,,,,,,,,,,,,0|i00027:,,,,,,To Do,24/Jan/26 3:54 PM
