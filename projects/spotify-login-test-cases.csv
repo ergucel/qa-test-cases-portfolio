@@ -1,0 +1,34 @@
+Key,Name,Status,Precondition,Objective,Folder,Priority,Component,Labels,Owner,Estimated Time,Coverage (Issues),Coverage (Pages),Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Test Data,Test Script (Step-by-Step) - Expected Result,Test Script (Plain Text),Test Script (BDD)
+SPTYF-T16,Verify welcome screen is displayed correctly on app launch,Approved,"- Application is launched successfully
+- User is not logged in",Ensure the welcome screen is displayed correctly on app launch,,High,,,ergucel,,,,Launch the applicaton,,Welcome screen is displayed correctly,,
+SPTYF-T17,Verify sign up free button redirects user to registration flow,Approved,"- Application is launched successfully
+- User is not logged in","Ensure the sign up free button redirects the user to registration flow 
+correctly",,High,,,ergucel,,,,Verify the sign up free button visible and enable,,Sign up free button visible and clickable corretly,,
+,,,,,,,,,,,,, Click on the sign up free button,,User redirected to the registration flow correctly,,
+SPTYF-T18,Verify log in button redirects user to login flow,Approved,"- Application is launched successfully
+- User is not logged in",Ensure the log in button redirects user to login flow correctly,,High,,,ergucel,,,,Verify the log in button visible and enable,,Log in button visible and clickable correctly,,
+,,,,,,,,,,,,,Click on the log in button,,User is redirected to login flow correctly,,
+SPTYF-T19,Verify to login with email redirects user to dashboard,Approved,"- Application is launched successfully
+- User is not logged in",Ensure the login with email redirected user to dashboard correctly,,High,,,ergucel,,,,Verify the log in button visible and enable,,Log in button visible and clickable correctly,,
+,,,,,,,,,,,,,Click on the log in button,,User is redirected to login flow correctly,,
+,,,,,,,,,,,,,Verify the Continue with email button visible and enable,,Continue with email button visible and clickable correctly,,
+,,,,,,,,,,,,,Click on the continue with email button,,User is redirected to the login form correctly,,
+,,,,,,,,,,,,,Click to the email field and enter a valid and active email,,The user can enter an email into the email field,,
+,,,,,,,,,,,,, Click to the password field and enter a valid password,,The user can enter a valid password into the password,,
+,,,,,,,,,,,,,Click to the login button,, User is redirected to the dashobard successfully,,
+SPTYF-T20,Verify to sign up with email redirects user to registration screen,Approved,"- Application is launched successfully
+- User is not logged in","Ensure the sign up with email redirected user to registration screen 
+correctly",,High,,,ergucel,,,,Verify the sign up free button visible and enable,,Sign up free button visible and clickable corretly,,
+,,,,,,,,,,,,, Click on the sign up free button,,User redirected to the registration flow correctly,,
+,,,,,,,,,,,,,Verify the Continue with email button visible and enable,,Continue with email button visible and clickable correctly,,
+,,,,,,,,,,,,,Click on the continue with email button,,User is redirected to the sign up form correctly,,
+,,,,,,,,,,,,,Click to the email field and enter a valid email address,,The user can enter a valid email into the email field,,
+,,,,,,,,,,,,,Cick on the next button,,User is redirected to the create password screen correctly,,
+,,,,,,,,,,,,, Click to the password field and enter a valid password,,The user can enter a valid password into the password,,
+,,,,,,,,,,,,,Click to the next button,,User is redirected to the birthday enterance screen successfully,,
+,,,,,,,,,,,,,Enter a valid birthday,,The system accepts the entered birthday successfully,,
+,,,,,,,,,,,,,Click on the next button,,User is redirected to the gender selection screen successfully,,
+,,,,,,,,,,,,,Select a gender,,User can select a gender successfully,,
+,,,,,,,,,,,,,Click on the next button,,"User is redirected to the term of user and privacity policy page 
+successfully",,
+,,,,,,,,,,,,,Click on the create account button,,The system accepts entered informations and create an account successfully,,
