@@ -50,6 +50,4 @@ This project is created **strictly for educational and portfolio purposes**.
 
 ---
 
-## Author
-Gökhan Ergücel  
 Aspiring QA / Software Tester  
