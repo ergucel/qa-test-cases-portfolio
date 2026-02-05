@@ -4,7 +4,6 @@
 
 Manual QA Engineer focused on test case design, bug reporting, and quality assurance fundamentals. This portfolio demonstrates practical testing skills through real-world application scenarios.
 
-**Location:** Sunnyvale, California  
 **Specialization:** Manual Testing | Test Case Design | Bug Documentation
 
 ---
@@ -109,7 +108,6 @@ qa-test-cases-portfolio/
 ## 📫 Contact
 
 **LinkedIn:** [linkedin.com/in/gokhan-ergucel-0aab43352](https://www.linkedin.com/in/gokhan-ergucel-0aab43352/)  
-**Location:** Sunnyvale, CA
 
 ---
 
