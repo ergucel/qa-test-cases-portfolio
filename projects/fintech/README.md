@@ -1,4 +1,4 @@
-# QA Test Cases Portfolio
+# Fintech Test Cases
 
 Manual test cases created as part of my QA learning journey.
 
